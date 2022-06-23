@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 1</title>
+    <style>
+        img{
+            height: 600px;
+            width: 400px;
+        }h1{
+            text-align: center;
+            color: orange;
+            letter-spacing: 5px;
+        }.container{
+            display:flex ;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }*{
+            background-color: black;
+            color:white;
+        }button{
+            border: 2px solid white;
+            font-size: 50px;
+            padding: 10px 30px;
+            margin: 10px 30px;
+            cursor: pointer;
+        }button:hover{
+            color: orange;
+            border: 2px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <h1>PROJECT 1</h1>
+    <div class="container">
+        <div class="img">
+            <img src="1.png" alt="" id="im">
+        </div>
+        <div class="btn">
+            <button id="btn1">FIRST</button>
+            <button id="btn2">SECOND</button>
+            <button id="btn3">BOTH</button>
+        </div>
+    </div>
+
+    <script>
+        let btn1 = document.getElementById("btn1");
+        let btn2 = document.getElementById("btn2");
+        let btn3 = document.getElementById("btn3");
+
+        // const btn1Call = ()=>{
+        //     alert("hih");
+        // }
+
+        btn1.addEventListener("click",function btn1Call(){
+            document.getElementById("im").src = '1.png';
+        });
+
+        btn2.addEventListener("click",function btn2Call(){
+            document.getElementById("im").src = '2.png';
+        });
+
+        btn3.addEventListener("click",function btn3Call(){
+            document.getElementById("im").src = '1.png';
+        });
+    </script>
+</body>
+</html>
